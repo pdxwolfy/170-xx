@@ -1,0 +1,17 @@
+body {
+  padding: 1em;
+  font-family: sans-serif;
+}
+
+.flash.success {
+  background-color: #ffff99;
+}
+
+form.delete {
+  display: inline-block;
+}
+
+.account-info {
+  font-style: italic;
+  font-size: 0.9em;
+}

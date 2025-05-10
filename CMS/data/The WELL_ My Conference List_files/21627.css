@@ -1,0 +1,27 @@
+/*
+** NOTE: A fully annotated and easier to read version of the Engaged CSS can be
+** found at <https://user.well.com/css/annotated-test/index.html>.
+**
+** You can find a CSS tutorial at http://www.w3schools.com/css/default.asp and
+** elsewhere.
+*/
+
+body,div,table,.Content,.Wrapper.WithToolbar,.MainToolbarWrapper{
+position:static !important;
+left:auto !important;
+right:auto !important;
+top:auto !important;
+bottom:auto !important;
+overflow:visible !important;
+}
+body,table{
+width:100% !important;
+max-width:100% !important;
+min-width:100% !important;
+}
+.MainToolbarWrapper,.MainToolbar,.WhoAmI,.Working{
+display:none;
+}
+.Content.WithToolbar,.WithToolbar .StatusWrapper,.PageFooter.WithToolbar,.ContentWrapper{
+margin-left:0;
+}

@@ -1,0 +1,37 @@
+<ul>
+  <% @files.each do |file| %>
+    <li>
+      <a href="<%== url Route::FILE_VIEW, name: file %>"
+         class="view"><%= file %></a>
+
+      <a href="<%== url Route::FILE_EDIT, name: file %>" class="edit">Edit</a>
+
+      <a href="<%== url Route::FILE_DUPLICATE, name: file %>" class="duplicate">
+        Duplicate
+      </a>
+
+      <form action="<%= Route::FILE_DELETE %>" method="post" class="delete">
+        <input type="hidden" name="name" value="<%= escape file %>">
+        <button type="submit">Delete</button>
+      </form>
+    </li>
+  <% end %>
+</ul>
+
+<p><a href="<%= Route::FILE_NEW %>" id="new-document">New Document</a></p>
+
+<div class="account-info">
+  <% if session[:username] %>
+    <form action="<%= Route::USERS_SIGNOUT %>" method="post" id="signout">
+      <p>Signed in as <%= session[:username] %></p>
+      <button type="submit">Sign Out</button>
+    </form>
+  <% else %>
+    <a href="<%= Route::USERS_SIGNIN %>" id="signin">
+      <button type="submit">Sign In</button>
+    </a>
+    <a href="<%= Route::USERS_SIGNUP %>" id="signup">
+      <button type="submit">Sign Up</button>
+    </a>
+  <% end %>
+</div>

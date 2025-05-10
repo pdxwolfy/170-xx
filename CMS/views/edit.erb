@@ -1,0 +1,8 @@
+<form action="<%= Route::FILE_EDIT %>" method="post">
+  <h3>Edit content of <%= @file_name %>:</h3>
+  <input type="hidden" name="name" value="<%= @file_name %>">
+  <textarea name="content" rows="20" cols="100"><%= @content %></textarea>
+  <p>
+    <input type="submit" value="Save Changes">
+  </p>
+</form>

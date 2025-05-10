@@ -1,0 +1,1310 @@
+/*Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:46.0) Gecko/20100101 Firefox/46.0*/
+/*
+** NOTE: A fully annotated and easier to read version of the Engaged CSS can be
+** found at <https://user.well.com/css/annotated-test/index.html>.
+**
+** You can find a CSS tutorial at http://www.w3schools.com/css/default.asp and
+** elsewhere.
+*/
+
+strong{
+margin:0;
+padding:0;
+border:0;
+outline:0;
+font-weight:inherit;
+font-style:inherit;
+font-size:100%;
+font-family:inherit;
+vertical-align:baseline;
+}
+html,body,div,span,applet,object,iframe,p,blockquote,pre,a,abbr,acronym,address,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{
+font-size:1em;
+}
+body{
+background-color:white;
+margin:0;
+padding:0;
+font-size:100%;
+}
+body,blockquote,dl,li,ol,td,th,ul,div,h1,h2,h3,h4,h5,h6,span,strong{
+font-family:Arial, Helvetica, sans-serif;
+color:black;
+}
+body,blockquote,dl,li,ol,th,tr,ul{
+line-height:1.1;
+}
+code,kbd,pre,samp,tt,input,textarea{
+color:black;
+}
+img{
+border:none;
+}
+table{
+border-collapse:collapse;
+width:100%;
+margin:0;
+padding:0;
+}
+th{
+text-align:left;
+}
+td{
+line-height:1.25;
+}
+strong{
+font-weight:bold;
+font-size:112%;
+}
+h1,h2,h3,h4,h5,h6{
+text-align:center;
+}
+textarea,.TextInputBox{
+font-size:110%;
+font-family:monospace;
+}
+a:link,a:visited{
+color:#006699;        
+}
+a:focus,a:hover,a:active{
+color:#993300;        
+text-decoration:underline;
+}
+a em{
+vertical-align:top;
+}
+.Wrapper{ }
+.Content{
+padding:1em 2em 1em 2em;
+width:100%;
+}
+.Wrapper > .ContentWrapper,.Wrapper > .ContentWrapper > .Content{
+width:auto;
+}
+.ContentWrapper{
+padding:0;
+margin:0;
+}
+.WrongCGI{
+width:75%;
+height:90%;
+background-color:yellow;
+text-align:center;
+vertical-align:middle;
+padding:20% 10% 100% 10%;
+margin:auto;
+}
+.StatusWrapper{
+padding:1em 2em;
+}
+.Status{
+background-color:#f0f0f0;   
+text-align:center;
+border:1px solid black;
+padding:.5em;
+}
+.Status p{
+font-size:90%;
+margin:0;
+}
+.NoticeWrapper{
+padding:1em 2em;
+}
+.Notice{
+background-color:#f0f0f0;     
+text-align:center;
+border:1px solid black;
+padding:.5em;
+}
+.Notice p{
+font-size:90%;
+margin:0;
+}
+.ClearBoth{
+clear:both;
+}
+.Alert{
+color:#cc0000;        
+font-weight:bold;
+}
+.RightJustify{
+float:right;
+}
+.Banner{
+font-size:28px;
+font-weight:bold;
+background-color:#5790ff;   
+color:white;          
+border:2px solid blue;
+white-space:nowrap;
+padding:.5em 1em;
+}
+.PageSummary{
+text-align:right;
+width:80%;
+max-width:80%;
+min-width:75%;
+float:left;
+padding-bottom:1em;
+}
+.PageSummaryFull{
+width:100%;
+max-width:100%;
+min-width:100%;
+}
+.HeadingButtons{
+float:left;
+text-align:left;
+width:20%;
+max-width:25%;
+min-width:20%;
+padding:0 0 1em 0;
+}
+.HeadingButtons ul{
+list-style:none;
+margin:0;
+padding-left:0;
+}
+.HeadingButtons ul li{
+margin:0;
+height:1.75em;
+min-height:1.75em;
+max-height:1.75em;
+font-size:95%;
+}
+.HeadingButtons ul li a:link i,.HeadingButtons ul li a:visited i{
+vertical-align:top;
+}
+.MyList{
+font-size:110%;
+padding-bottom:2em;
+}
+.MyListBanner{
+color:white;
+line-height:2.0;
+}
+.InstructionsWrapper{
+padding:0;
+margin:0;
+text-align:center;
+}
+.Instructions{
+padding:5em 12em 5em 12em;
+text-align:center;
+}
+.Instructions p{
+text-align:left;
+}
+.MyList div{
+padding:0;
+margin:0;
+}
+.MyList ul{
+text-align:center;
+margin:0;
+padding:0;
+list-style:none;
+}
+.MyList ul li{
+display:inline;
+float:left;
+line-height:1.4;
+width:33%;
+max-width:33%;
+text-align:left;
+padding-bottom:1px;
+}
+.MyList ul li.MyListColumn1{
+clear:left;
+}
+.MyList ul li.MyListColumn1 div{
+padding-left:30%;
+}
+.MyList ul li.MyListColumn2 div{
+padding-left:20%;
+}
+.MyList ul li.MyListColumn3 div{
+padding-left:10%;
+}
+.MyList ul li img{
+display:inline;
+float:left;
+}
+.GSNWrapper{
+margin:1em auto 1em auto;
+text-align:center;
+}
+.TopicList{
+text-align:center;
+}
+.TopicList td.TLStatusIcon{
+vertical-align:baseline;
+}
+.TopicListDescription{
+font-size:85%;
+text-align:right;
+padding:1em 0 1em 0;
+}
+.TopicSelectionBar{
+display:block;
+margin-top:2em;
+}
+.TopicSelectionBar ul{
+display:inline;
+margin:.5em 0 0 0;
+padding:.7em 0 .7em 0;
+list-style:none;
+border:1px solid black;
+}
+.TopicSelectionBar ul li{
+display:inline;
+margin:.5em 2em 0 2em;
+}
+.TopicSelectionBar a:link,.TopicSelectionBar a:visited{
+font-size:90%;
+font-weight:bold;
+color:#00528a;        
+text-decoration:none;
+line-height:1.0;
+padding:.5em;
+border:1px solid white;
+}
+.TopicSelectionBar a:focus,.TopicSelectionBar a:hover,.TopicSelectionBar a:active{
+color:#993300;        
+text-decoration:underline;
+border:1px solid black;
+background-color:#ffffe0;   
+}
+.TopicSelectionBar a:link.Selected,.TopicSelectionBar a:visited.Selected{
+color:#cc0000;        
+}
+.TopicSelectionBar a:focus.Selected,.TopicSelectionBar a:hover.Selected,.TopicSelectionBar a:active.Selected{
+color:red;
+}
+.TLPlacemark,.TLTitle,.TLDate{             
+text-align:left;
+}
+.TLNum,.TLNew,.TLTotal{              
+text-align:right;
+}
+.TLStatusIcon,.TLStatusNew{            
+text-align:center;
+}
+.TLTitle{
+vertical-align:top;
+}
+.Pseudonym{
+width:50%;
+}
+.ConferenceBanner,.PseudFrame{
+text-align:center;
+}
+.ConfBanner img{
+border:2px solid transparent;
+}
+* html .ConfBanner img{
+border:2px solid white;   
+}
+.ConfBanner img:focus,.ConfBanner img:hover{
+border:2px solid #cc0000;   
+}
+a.ConfBannerText,a.ConfBannerText:link,a.ConfBannerText:visited{
+line-height:2.5;
+text-transform:capitalize;
+text-decoration:none;
+color:white;
+}
+a.ConfBannerText:active,a.ConfBannerText:focus,a.ConfBannerText:hover{
+color:yellow;
+background-color:blue;
+}
+a:link.ConfBannerPlain,a:visited.ConfBannerPlain{   
+font-size:150%;
+font-weight:bold;
+line-height:2.5;
+text-transform:capitalize;
+border:1px solid white;
+padding:.25em 1em;
+}
+a:focus.ConfBannerPlain,a:hover.ConfBannerPlain,a:active.ConfBannerPlain{
+background-color:#ffffe0;   
+border:1px solid black;
+}
+.ScrollBack{
+margin-top:2.5em;
+}
+.ScrollBack,.ScrollForward{
+text-align:center;
+}
+.TopicTitle{
+font-size:120%;
+font-weight:bold;
+}
+.TopicInfo{
+}
+table.LinkedTopicList{
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+width:auto;
+}
+div.LinkedTopicList{
+border:1px solid gray;
+background-color:#ffffc0;   
+text-align:left;
+font-size:90%;
+padding:5px 2.5em 0 2.5em;
+margin:0;
+float:right;
+}
+.ResponseSeparator .cfname,.ResponseSeparator .rpuser{    
+font-weight:bold;
+}
+.ResponseSeparator .rpdate{    
+font-style:italic;
+}
+.ResponseSeparator .tpnum,.ResponseSeparator .tptitle,.ResponseSeparator .rpnum,.ResponseSeparator .rppseud{   
+}
+.PlacemarkForm{
+display:inline;
+}
+.JumpLink{
+}
+.KeepNewButton,.KeepNew{
+}
+.SearchResults .Hidden.WasHidden,.Response{
+margin-left:2.5em;
+}
+pre.Post,pre.HiddenPost,.Wrappable{
+margin-bottom:1em;
+font-size:100%;
+line-height:1.2;
+}
+pre.Post h1,pre.HiddenPost h1,.Wrappable h1,pre.Post h2,pre.HiddenPost h2,.Wrappable h2,pre.Post h3,pre.HiddenPost h3,.Wrappable h3,pre.Post h4,pre.HiddenPost h4,.Wrappable h4,pre.Post h5,pre.HiddenPost h5,.Wrappable h5,pre.Post h6,pre.HiddenPost h6,.Wrappable h6{
+font-family:monospace;
+text-align:left;
+margin-top:0;
+margin-bottom:0;
+}
+pre.Post img,pre.HiddenPost img,.Wrappable img{
+max-width:80%;
+max-height:80%;
+}
+pre.Post br,pre.HiddenPost br,.Wrappable br{
+line-height:0;
+margin-top:0;
+margin-bottom:0;
+padding-top:0;
+padding-bottom:0;
+font-size:5px;
+}
+pre.Post,pre.Post blockquote,pre.Post dd,pre.Post dfn,pre.Post dir,pre.Post div,pre.Post dl,pre.Post dt,pre.Post h1,pre.Post h2,pre.Post h3,pre.Post h4,pre.Post h5,pre.Post h6,pre.Post li,pre.Post menu,pre.Post ol,pre.Post p,pre.Post ul,pre.Hidden,pre.Hidden blockquote,pre.Hidden dd,pre.Hidden dfn,pre.Hidden dir,pre.Hidden div,pre.Hidden dl,pre.Hidden dt,pre.Hidden h1,pre.Hidden h2,pre.Hidden h3,pre.Hidden h4,pre.Hidden h5,pre.Hidden h6,pre.Hidden li,pre.Hidden menu,pre.Hidden ol,pre.Hidden p,pre.Hidden ul,.Wrappable,.Wrappable blockquote,.Wrappable dd,.Wrappable dfn,.Wrappable dir,.Wrappable div,.Wrappable dl,.Wrappable dt,.Wrappable h1,.Wrappable h2,.Wrappable h3,.Wrappable h4,.Wrappable h5,.Wrappable h6,.Wrappable li,.Wrappable menu,.Wrappable ol,.Wrappable p,.Wrappable ul{
+font-family:monospace;
+}
+.Wrappable{
+width:50em; width:80ch;
+word-wrap:break-word;
+}
+.LongTopicNotice{
+color:#cc0000;        
+font-size:85%;
+font-style:italic;
+text-align:center;
+}
+#PostBoxWrapper{
+padding-top:2em;
+padding-bottom:0;
+margin-bottom:0;
+}
+#YourPseudPrompt{
+font-size:85%;
+margin-bottom:0;
+padding:0;
+}
+#PseudonymWrapper{
+padding-bottom:1px;
+}
+.PostToolbar ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+.PostToolbar ul li{
+display:inline;
+}
+.PostToolbar ul li input{
+width:18em;
+width:auto;
+margin:auto 15% auto 0;
+display:inline;
+float:left;
+text-align:left;
+}
+.Misspelled{
+color:#ff8000;        
+}
+a:link.TextButton,a:visited.TextButton{
+font-size:90%;
+font-weight:bold;
+color:#00528a;        
+text-decoration:none;
+vertical-align:top;
+line-height:1.0;
+padding:8px;
+}
+a:focus.TextButton,a:hover.TextButton,a:active.TextButton{
+color:#993300;        
+text-decoration:underline;
+}
+.PostForm input.TextButton{
+}
+input.TextButton{
+font-family:Arial, Helvetica, sans-serif;
+font-size:100%;
+font-size:90%;
+font-weight:bold;
+background-color:transparent;
+color:#00528a;        
+text-decoration:none;
+cursor:pointer;
+border-width:0;
+padding:8px;
+line-height:1.5;
+vertical-align:top;
+}
+input.TextButton:hover,input.TextButton:focus{
+color:#993300;        
+text-decoration:underline;
+}
+a.NewButton:link,a.NewButton:visited{
+font-size:90%;
+font-style:italic;
+font-weight:normal;
+color:#cc0000;        
+text-decoration:none;
+}
+a.NewButton:focus,a.NewButton:hover,a.NewButton:active{
+color:#993300;        
+text-decoration:underline;
+}
+a:link.HelpButton,a:visited.HelpButton,span.HelpButton{
+font-size:120%;
+font-weight:bold;
+color:#cc0000;        
+text-decoration:none;
+}
+a:focus.HelpButton,a:hover.HelpButton,a:active.HelpButton{
+color:#993300;        
+}
+.KBFocus{
+position:fixed;
+top:0;
+left:0;
+z-index:50;
+}
+hr.ShortCenter{
+width:50%;
+text-align:center;
+margin-top:2em;
+margin-bottom:2em;
+color:gray;
+}
+.PlacemarksTable{
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+}
+.PlacemarkCheckbox,.PlacemarkDisclose,.PlacemarkConf,.PlacemarkTitle,.PlacemarkOpen{          
+text-align:left;
+vertical-align:top;
+}
+.PlacemarkOpen{
+line-height:1.2;
+}
+.PlacemarkNew{         
+text-align:center;
+vertical-align:top;
+padding:0 1em 0 1em;
+}
+.PlacemarkTopic,.PlacemarkResp{        
+text-align:right;
+vertical-align:top;
+}
+.PlacemarkCheckbox,.PlacemarkDisclose{      
+padding-right:1em;
+}
+.PlacemarkConf,.PlacemarkTitle,.PlacemarkTopic{       
+padding-right:2em;
+}
+.HistoryTable{
+}
+.HistoryTime,.HistoryConf,.HistoryTitle{         
+text-align:left;
+vertical-align:top;
+}
+.HistoryTopic,.HistoryResp{          
+text-align:right;
+vertical-align:top;
+}
+.HistoryTime,.HistoryConf,.HistoryTopic,.HistoryTitle{         
+padding-right:1em;
+}
+.HistoryTime{
+white-space:nowrap;
+}
+.HistoryTitle > .Killed{
+font-style:italic;
+color:#606060;
+}
+.SettingsNav{
+float:left;
+width:100%;
+border-bottom:1px solid gray;
+line-height:1.0;
+}
+.SettingsNav ul{
+margin:0;
+padding:10px 0 10px 0;
+list-style:none;
+}
+.SettingsNav ul li{
+float:left;
+background:url("/Images/test/norm_right.gif") no-repeat right top;
+margin:0;
+padding:0;
+}
+.SettingsNav ul li a{
+display:block;
+background:url("/Images/test/norm_left.gif") no-repeat left top;
+padding:5px 15px 5px 15px;
+white-space:nowrap;
+font-size:100%;    
+}
+.SettingsNav ul li.SettingsNavCurrent{
+background:url("/Images/test/norm_right_on.gif") no-repeat right top;
+}
+.SettingsNav ul li.SettingsNavCurrent a{
+background:url("/Images/test/norm_left_on.gif") no-repeat left top;
+padding-bottom:5px;
+margin-bottom:-1px;
+border-bottom:1px solid white;
+color:darkred;
+}
+.SettingsNavEnd{
+clear:both;
+}
+.SettingsPage{
+}
+.SettingsInstructions{
+margin:2em auto 2em auto;
+text-align:left;
+}
+.SettingsSaveAndClose{
+text-align:center;
+margin:1em 0 2em 0;
+padding:0;
+font-size:90%;
+color:gray;
+}
+.SettingsGroup{
+width:100%;
+}
+.SettingsGroupHeading{
+margin:1em auto 1em auto;
+background-color:#f0f0f0;
+text-align:left;
+padding:0 1em 0 1em;
+border:1px solid gray;
+}
+.SettingsGroupHeading h2{
+text-align:left;
+margin:.5em 0 0 0;
+}
+.SettingsGroupHeading p{
+margin:.25em 0 .5em 0;
+}
+.SettingsItemWrapper,.SettingsActionWrapper{
+padding:.5em 0 .5em 0;
+margin-bottom:.5em;
+text-align:left;
+}
+.SettingsActionWrapper{
+}
+.SettingsItemTitle{
+display:inline;
+float:left;
+margin-left:3%;
+width:20%;
+height:auto;
+font-weight:bold;
+}
+.SettingsActionWrapper .SettingsItemTitle{
+width:auto;
+}
+.SettingsItemSetting{
+display:inline;
+height:auto;
+margin-left:3%;
+width:67%;
+float:left;
+font-weight:bold;
+}
+.SettingsItemSetting small,.SettingsItemSetting i{
+font-weight:normal;
+}
+.SettingsItemSetting textarea,.SettingsItemSetting input[type="text"]{
+max-width:100%;
+}
+.SettingsItemHelp{
+display:inline;
+float:left;
+text-align:right;
+font-weight:bold;
+position:relative;
+margin-left:3%;
+}
+.SettingsActionWrapper .SettingsItemHelp{
+margin-left:1em;
+width:2%;
+}
+.SettingsItemHelp a{
+font-size:90%;
+text-decoration:none;
+color:#cc0000;
+background-color:white;
+border:1px solid black;
+border-radius:5px 5px;
+-webkit-border-radius:5px;
+padding:0 4px 0 4px;
+}
+.SettingsItemHelp a:hover{
+color:white;
+background-color:#cc0000;
+}
+.SettingsItemHelp a .SettingsItemTooltip{
+text-align:left;
+}
+.SettingsItemHelp a:hover .SettingsItemTooltip{
+display:block;
+position:absolute;
+top:-10px;
+right:20px;
+min-width:400px;
+max-width:400px;
+width:400px;
+padding:5px 10px 5px 10px;
+margin:10px;
+border:1px solid black;
+background-color:#ffffe0;       
+z-index:99;
+border-radius:5px 5px;
+-webkit-border-radius:5px;
+font-weight:normal;
+text-decoration:none;
+}
+.SettingsActionWrapper .SettingsItemHelp a:hover .SettingsItemTooltip{
+top:auto;
+bottom:20px;
+right:-250px;
+}
+.SettingsItemTooltip code{
+font-family:monospace;
+font-weight:bold;
+}
+.SettingsItemEnd{
+clear:both;
+}
+.SettingsNotes{
+margin:auto 10% auto 10%;
+text-align:left;
+}
+.LineBreak{
+line-height:1.5;
+}
+.MediumLineBreak{
+line-height:.5;
+}
+.SmallLineBreak{
+line-height:.2;
+}
+.SettingsItemHelp .LineBreak{
+}
+table.FullTextSearchForm{
+text-align:center;
+}
+td.NewSearch{
+text-align:left;
+}
+td.ShowAdvancedOptions{
+text-align:right;
+padding:0;
+}
+table.FullTextSearchOptions{
+width:90%;
+font-size:95%;
+}
+table.FullTextSearchOptions th{
+text-align:center;
+border:1px solid black;
+padding-top:5px;
+padding-bottom:5px;
+background-color:#f0f0f0;   
+}
+table.FullTextSearchOptions > tr{
+border:none;
+}
+table.FullTextSearchOptions td{
+border:none;
+padding:5px;
+}
+td.SearchLeftColumn{
+vertical-align:top;
+text-align:left;
+}
+td.SearchRightColumn{
+text-align:left;
+}
+table.FullTextSearchOptions samp,.BasicSearchOptions samp{
+font-family:Arial, Helvetica, sans-serif;
+font-size:90%;
+}
+a.AdvancedOptionsLink{
+}
+tr.AdvancedOptionsHidden td{
+font-size:80%;
+padding:0 0 1em 0;
+}
+tr.AdvancedOptionsHidden td.ShowAdvancedOptions{
+padding:0;
+}
+.SearchResults{
+}
+.SearchResults h3{
+text-align:left;
+margin-bottom:0;
+}
+.SearchResults a.TextButton{
+margin-right:2em;
+padding:0;
+}
+.SearchResults hr.ShortCenter{
+margin-top:1em;
+margin-bottom:1em;
+}
+.SearchType{
+vertical-align:top;
+}
+.phrase1,.phrase2{
+font-family:monospace;
+font-size:100%;
+}
+.phrase1{
+background-color:#87ceeb;   
+}
+.phrase2{
+background-color:#b0ffb0;   
+}
+.Searching{
+width:20%;
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+vertical-align:middle;
+z-index:10000;
+background-color:#ffffc0;   
+}
+.SearchingInner{
+background-color:#ffffc0;   
+border:2px solid gray;
+margin:2px;
+padding-top:1em;
+padding-bottom:1em;
+font-family:Arial, Helvetica, sans-serif;
+font-weight:bold;
+}
+.FriendlyError{
+padding:5em 1em 5em 5em;
+text-align:left;
+}
+.FriendlyError strong{
+line-height:1.25;
+font-size:125%;
+font-weight:bold;
+}
+.FriendlyError .ContactUs{
+margin-top:2em;
+font-size:90%;
+color:#606060;
+}
+.FriendlyError .Details{
+margin-top:2em;
+font-family:monospace;
+font-size:90%;
+color:#606060;
+}
+.Centered{
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+clear:both;
+}
+.Left{
+text-align:left;
+}
+.Hidden{
+display:none;
+}
+.Working{
+position:absolute;
+z-index:10000;
+top:10px;
+right:2em;
+background-color:#ffffe0;   
+border:1px solid gray;
+font-size:90%;
+font-weight:bold;
+font-family:Arial, Helvetica, sans-serif;
+width:6em;
+height:1em;
+margin-top:2em;
+padding:.4em .3em .6em .3em;
+text-align:center;
+vertical-align:middle;
+}
+.CloseWindow{
+font-size:85%;
+text-align:right;
+margin:1em 2em 1em 0;
+}
+.CloseWindowInstructions{
+}
+.Notes{
+width:60%;
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+}
+.Notes p{
+text-align:left;
+}
+.Highlight{
+border:1px solid #cc0000;
+padding:5px;
+}
+.IdentifyMain{
+display:block;
+clear:both;
+position:absolute;
+bottom:0;
+left:0;
+text-align:left;
+font-size:80%;
+line-height:1.0;
+margin:0 1em 0 1em;
+padding:0;
+}
+.NoJavascript{
+border:1px solid black;
+background-color:yellow;
+text-align:center;
+}
+.SlippedIn{
+border:1px solid black;
+background-color:#fdfdfd;
+padding:1em;
+}
+.Tooltip{
+position:relative;
+color:#000000;
+}
+a.Tooltip .PopupHelp{
+position:relative;
+margin-left:-999em;
+}
+a.Tooltip:focus .PopupHelp,a.Tooltip:hover .PopupHelp{
+display:block;
+background-color:#ffffee;
+color:#202020;
+font-family:Arial, Helvetica, sans-serif;
+text-decoration:none;
+margin-left:0;
+border:1px solid gray;
+border-radius:5px 5px;
+-webkit-border-radius:5px;
+box-shadow:5px 5px 5px rgba(0,0,0,0.1);
+-webkit-box-shadow:5px 5px rgba(0,0,0,0.1);
+position:fixed;
+left:auto;
+top:auto;
+bottom:auto;
+right:auto;
+z-index:99;
+}
+a.Tooltip:focus .PopupHelp,a.Tooltip:hover .PopupHelp{
+padding:1em 1em;
+}
+a.Tooltip:focus .PopupHelp strong,a.Tooltip:hover .PopupHelp strong{
+color:#0000a0;
+font-weight:bold;
+}
+a.Tooltip:focus .PopupHelp em,a.Tooltip:hover .PopupHelp em{
+color:#0000a0;
+font-style:italic;
+}
+a.Tooltip .SlippageHelp{
+margin-left:-999em;
+position:fixed;
+width:25em;
+}
+a.Tooltip:hover .SlippageHelp{
+position:absolute;
+left:-10em;
+top:4em;
+font-family:Arial, Helvetica, sans-serif;
+text-decoration:none;
+color:#404040;
+font-size:90%;
+font-weight:normal;
+}
+.LinkBack{
+margin-top:2em;
+text-align:center;
+}
+.ParticipantCount{
+text-align:center;
+}
+.PartiTable{
+display:table;
+margin-left:auto;
+margin-right:auto;
+}
+.PartiTable > .Row{
+display:table-row;
+}
+.PartiTable > .Row > .Cell{
+display:table-cell;
+padding-left:3em;
+padding-right:3em;
+}
+.PartiTable > .Row > .Header{
+font-weight:bold;
+}
+.PartiTable > .Row > .DateTime{
+text-align:right;
+}
+.PicospanMessage > pre{
+text-align:left;
+margin-left:auto;
+margin-right:auto;
+width:50em; width:80ch;
+}
+.WLoginMessage{
+text-align:left;
+margin-left:auto;
+margin-right:auto;
+width:50%;
+}
+.Usage{
+font-family:monospace;
+color:black;
+}
+.Usage b{
+font-family:monospace;
+font-weight:bold;
+}
+.Usage i{
+color:#404040;
+font-family:monospace;
+font-style:italic;
+}
+.Usage .Optional,.Usage.Optional{
+color:blue;
+font-weight:bold;
+}
+.Usage .Choice,.Usage.Choice{
+color:#008000;
+font-weight:bold;
+}
+.TopMessage{
+text-align:right;
+padding-top:6px;
+padding-right:6px;
+color:black;
+}
+.LinkBack{
+margin-bottom:0;
+margin-top:1em;
+}
+.EmptyRow{
+padding:0;
+margin:0;
+line-height:0;
+}
+.WhatAmI-test,.WhatAmI-staffbeta,.WhatAmI-facelift{
+display:block;
+font-size:70%;
+border:1px solid #a0a0a0;
+text-align:right;
+margin:0;
+padding-right:1em;
+}
+.WhatAmI-test{
+background-color:#ffffe0;
+}
+.WhatAmI-staffbeta{
+background-color:#e0ffe0;
+}
+.WhatAmI-facelift{
+background-color:#e0e0e0;
+}
+table.ProfileHeader td{
+width:50%;
+vertical-align:bottom;
+}
+.FavoriteConference{
+margin-right:2em;
+}
+/*
+** NOTE: A fully annotated and easier to read version of the Engaged CSS can be
+** found at <https://user.well.com/css/annotated-test/index.html>.
+**
+** You can find a CSS tutorial at http://www.w3schools.com/css/default.asp and
+** elsewhere.
+*/
+
+.WithToolbar{
+}
+.NoToolbar{
+}
+.FriendlyError{
+}
+.LoginPage{
+}
+.MainToolbarWrapper{
+display:block;
+position:absolute;
+}
+.MainToolbar{
+display:block;
+padding:0;
+border:1px solid gray;
+}
+* html .MainToolbar{
+background-color:white;
+}
+.MainToolbarContent{
+display:inline;
+margin:0;
+padding:0;
+list-style:none;
+color:#00528a;									
+font-size:90%;		
+font-weight:bold;
+}
+.MainToolbarContent > li{
+padding:0;
+margin:0;
+vertical-align:middle;
+line-height:2.2;
+}
+.MainToolbarContent > li > a:link,.MainToolbarContent > li > a:visited{
+text-decoration:none;
+padding:.5em .5em;
+vertical-align:baseline;
+border:1px solid transparent; 
+}
+.MainToolbarContent > li > a:focus,.MainToolbarContent > li > a:hover,.MainToolbarContent > li > a:active{
+background-color:#ffffe0;			
+color:#00528a;								
+border:1px solid black;
+text-decoration:underline;
+}
+* html .MainToolbarContent > li > a:link,* html .MainToolbarContent > li > a:visited{
+border:1px solid white;
+}
+.MainToolbarContent > li > a.HelpButtonTB{
+color:#cc0000;							
+}
+.Placemarks{
+}
+.History{
+}
+.Search{
+}
+.Settings{
+}
+.Confs{
+}
+.Logoff{
+}
+.Help{
+}
+.MainToolbarContent > .ShortcutEntry{
+padding-right:1em;
+}
+.MainToolbarContent > .ShortcutEntry input[type="text"]{
+display:inline;
+}
+.MainToolbarContent > .ShortcutEntry input.unfilled{
+color:gray;
+}
+.MainToolbarContent > .ShortcutEntry input.active,.MainToolbarContent > .ShortcutEntry input.filled{
+color:black;
+}
+.MainToolbarContent > .ShortcutEntry .ShortcutSubmit{
+display:none;
+}
+.MainToolbarContent > .ShortcutEntry a:link.SCHelpButton,.MainToolbarContent > .ShortcutEntry a:visited.SCHelpButton{
+padding:1px;
+color:#cc0000;					
+font-size:140%;
+font-weight:bold;
+text-decoration:none;
+line-height:1.0;
+border:1px solid transparent;
+}
+.MainToolbarContent > .ShortcutEntry a:focus.SCHelpButton,.MainToolbarContent > .ShortcutEntry a:hover.SCHelpButton,.MainToolbarContent > .ShortcutEntry a:active.SCHelpButton{
+background-color:#ffffe0;					
+border:1px solid black;
+}
+* html .MainToolbarContent > .ShortcutEntry a:link,* html .MainToolbarContent > .ShortcutEntry a:visited{
+border:1px solid white;
+}
+.MainToolbarContent > .ShortcutEntry img{
+vertical-align:middle;
+padding-left:1em;
+}
+a.HomeIcon:link,a.HomeIcon:visited{
+color:#00528a;        
+font-size:90%; 
+font-weight:bold;
+text-decoration:none;
+}
+a.HomeIcon:focus,a.HomeIcon:hover,a.HomeIcon:active{
+background-color:#ffffe0;   
+color:#00528a;        
+border:1px solid black;
+text-decoration:underline;
+}
+@media screen and(-webkit-min-device-pixel-ratio:0){
+.MainToolbarContent > li > a.Tooltip{
+text-decoration:none;
+}
+}
+a.Tooltip .KBHelp{
+margin-left:-999em;
+position:fixed;
+font-size:15px;
+}
+a.Tooltip:focus .KBHelp,a.Tooltip:hover .KBHelp{
+padding:0.8em 1em;
+left:12em;
+top:3em;
+bottom:auto;
+right:auto;
+line-height:1.25em;
+}
+a.Tooltip:focus .KBHelp .shortcut_key,a.Tooltip:focus .KBHelp .shortcut_desc,a.Tooltip:hover .KBHelp .shortcut_key,a.Tooltip:hover .KBHelp .shortcut_desc{
+font-family:Arial, Helvetica, sans-serif;
+text-decoration:none;
+padding:.2em;
+}
+a.Tooltip:focus .KBHelp .shortcut_key,a.Tooltip:hover .KBHelp .shortcut_key{
+font-family:monospace;
+font-size:15px;
+font-weight:bold;
+width:5em;
+max-width:5em;
+}
+a.Tooltip:focus .KBHelp .shortcut_desc,a.Tooltip:hover .KBHelp .shortcut_desc{
+font-weight:lighter;
+color:#404040;
+}
+a.Tooltip:focus .KBHelp .shortcut_desc b,a.Tooltip:hover .KBHelp .shortcut_desc b{
+color:#a00000;
+}
+/*
+** NOTE: A fully annotated and easier to read version of the Engaged CSS can be
+** found at <https://user.well.com/css/annotated-test/index.html>.
+**
+** You can find a CSS tutorial at http://www.w3schools.com/css/default.asp and
+** elsewhere.
+*/
+
+.ContentWrapper{
+margin-left:9em;
+padding-left:1em;
+}
+.MainToolbarWrapper{
+display:block;
+position:absolute;
+top:0;
+left:0;
+float:left;
+height:100%;
+max-height:100%;
+min-height:100%;
+padding:0;
+margin:0;
+}
+.MainToolbar{
+padding:5em 0 0 .25em;
+width:9em;
+min-width:9em;
+max-width:9em;
+height:100%;
+max-height:100%;
+min-height:100%;
+border:none;
+border-right:1px solid gray;
+border-bottom:1px solid gray;
+}
+.MainToolbarContent{
+margin:0;
+padding:0;
+list-style:none;
+line-height:2.2;
+}
+.MainToolbarContent > li{
+padding:0;
+margin:0;
+vertical-align:middle;
+line-height:1.2;
+}
+* html .MainToolbarContent li{
+display:inline;
+}
+.MainToolbarContent > li > a{
+display:block;
+}
+.MainToolbarContent > .ShortcutEntry{
+display:inline;
+}
+.MainToolbarContent > .ShortcutEntry input{
+display:inline;
+padding:0;
+vertical-align:top;
+}
+.MainToolbarContent > .ShortcutEntry a:link.SCHelpButton,.MainToolbarContent > .ShortcutEntry a:visited.SCHelpButton{
+display:inline;
+padding:0;
+vertical-align:top;
+}
+.MainToolbarContent > .ShortcutEntry img{
+margin:0;
+}
+/*
+** NOTE: A fully annotated and easier to read version of the Engaged CSS can be
+** found at <https://user.well.com/css/annotated-test/index.html>.
+**
+** You can find a CSS tutorial at http://www.w3schools.com/css/default.asp and
+** elsewhere.
+*/
+
+.MainToolbarWrapper{
+margin:0;
+padding:0;
+}
+body.WithToolbar > .MainToolbarWrapper{
+position:fixed;
+}

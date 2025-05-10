@@ -1,0 +1,130 @@
+@media screen and (max-device-width: 1440px) {
+/*  .MyList {
+    font-size: 100% ;
+  }
+*/
+
+  body {
+    font-size: 100% ;
+  }
+
+  pre.Post {
+    font-size: 125% ;
+  }
+
+}
+
+.MyList ul li a,
+.MyList small a {
+  text-decoration: none ;
+}
+
+@media screen and (min-device-width: 1296px) {
+  textarea.Response {
+     overflow-y: scroll ;
+  }
+
+  a[target="help"]:after { 
+    content: normal ;
+  }
+
+  .MainToolbar {
+    background-color: #fffff0 ;
+    width: 10em !important ;
+    min-width: 10em !important ;
+    max-width: 10em !important ;
+  }
+
+  .MainToolbarFloater ul a:link,
+  .MainToolbarFloater ul a:visited,
+  ul.MainToolbarShortcut a:link,
+  ul.MainToolbarShortcut a:visited {
+    border: 1px solid #fffff0 ;
+  }
+
+  .MainToolbarFloater ul a:focus,
+  .MainToolbarFloater ul a:hover,
+  .MainToolbarFloater ul a:active,
+  ul.MainToolbarShortcut a:focus,
+  ul.MainToolbarShortcut a:hover,
+  ul.MainToolbarShortcut a:active {
+    background-color: #ffffc0 ;
+    border: 1px solid gray ;
+  }
+
+  ul.MainToolbar {
+    padding-top: 1em ;
+  }
+
+  .author-wolfy {
+    border: 1px solid #c0c0c0 ;
+    background-color: #fffff0 ;
+    padding-left: 5px ;
+    padding-right: 5px ;
+    margin-bottom: 1em ;
+  }
+
+  pre.HiddenPost {
+    border: 1px solid black ;
+    background-color: #f0fff0 ;
+    padding: 5px ;
+  }
+
+  /* This will hide the "Loading..." status message
+  #status-message {
+    z-index: -1 ;
+  }
+  */
+
+  .ResponseSeparator {
+    background-color: #f8f8f8 ;
+    border: 1px solid #cccccc ;
+  }
+
+  .ResponseSeparator .cfname,
+  .ResponseSeparator .tpnum {
+    color: #000080 ;
+  }
+
+  .ResponseSeparator .tptitle,
+  .ResponseSeparator .tpnum {
+  }
+
+  .ResponseSeparator .rppseud {
+    font-size: 80% ;
+    color: #404040 ;
+  }
+
+  .WhoAmI {
+    display: block ;
+    font-size: 60% ;
+    color: gray ;
+    margin: 3px 2.2em 0 0 ;
+    text-align: right ;
+  }
+
+  .MyList ul li a:hover,
+  .MyList ul li a:active,
+  .MyList ul li a:focus,
+  .MyList small a:hover,
+  .MyList small a:active,
+  .MyList small a:focus {
+    background-color: yellow ;
+    padding: 0 ;
+    border: 1px solid gray ;
+  }
+
+  .TLTitle a:link,
+  .TLTitle a:visited {
+    text-decoration: none ;
+  }
+
+  .TLTitle a:hover,
+  .TLTitle a:active,
+  .TLTitle a:focus {
+    background-color: yellow ;
+    border: 1px solid gray ;
+    padding-top: 3px ;
+    padding-bottom: 3px ;
+  }
+}

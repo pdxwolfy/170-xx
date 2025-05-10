@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Content Management System</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/stylesheets/application.css">
+  </head>
+
+  <body>
+    <% [:error, :message].each do |flash_type| %>
+      <% if session[flash_type] %>
+        <div class="flash <%= flash_type %>">
+          <% messages = session[flash_type] %>
+          <% messages = [messages] unless messages.respond_to? :each %>
+          <% messages.each do |message| %>
+            <p><%= message %></p>
+          <% end %>
+          <% session.delete flash_type %>
+        </div>
+      <% end %>
+    <% end %>
+
+    <main>
+      <%== yield %>
+    </main>
+  </body>
+</html>

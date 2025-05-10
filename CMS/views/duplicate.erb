@@ -1,0 +1,9 @@
+<form action="<%= Route::FILE_DUPLICATE %>" method="post">
+  <h3>Creating duplicate of <%= @original_file_name %>.</h3>
+  <h4>Enter name of new file:</h4>
+  <p>
+    <input type="hidden" name="original" value="<%= @original_file_name %>">
+    <input type="text" name="name" width="25" value="<%= @file_name %>">
+    <input type="submit" value="Create Duplicate">
+  </p>
+</form>

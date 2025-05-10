@@ -1,0 +1,38 @@
+# Copyright (c) 2016 Pete Hanson
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
+
+ruby '2.5.3'
+
+gem 'addressable',     '~>2.4.0'
+gem 'bcrypt',          '~>3.1.11'
+gem 'erubis',          '~>2.7.0'
+gem 'rack',            '~>2.0'
+gem 'rake'
+gem 'redcarpet',       '~>3.3.4'
+gem 'sinatra',         '~>2.0'
+gem 'sinatra-contrib', '~>2.0'
+
+group :development, :test do
+  gem 'awesome_print'
+  gem 'pry', git: 'https://github.com/pry/pry.git',
+             ref: '90d127778f3f4e9581d9dfb5c17851af48867186'
+  gem 'pry-power_assert', '~>0.0.2'
+end
+
+# group :development do
+#   gem 'thin', '~>1.6.4'
+# end
+
+group :test do
+  gem 'minitest',           '~>5.8.4'
+  gem 'minitest-reporters', '~>1.1.8'
+  gem 'nokogiri',           '~>1.6.7'
+  gem 'rack-test'
+  gem 'simplecov',          '~>0.11.2', require: false
+end
+
+group :production do
+  gem 'puma', '~>3.2.0'
+end

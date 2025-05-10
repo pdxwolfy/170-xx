@@ -1,0 +1,14 @@
+<form action="<%= Route::USERS_SIGNUP %>" method="post">
+  <h3>Please choose a login name and password:</h3>
+  <p>
+    <label for="username">Username:</label>
+    <input type="text" name="username" width="25" value="<%= @username %>">
+  </p>
+  <p>
+    <label for="password">Password:</label>
+    <input type="password" name="password" width="25" value="">
+  </p>
+  <p>
+    <input type="submit" value="Sign Up">
+  </p>
+</form>
